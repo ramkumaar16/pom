@@ -28,8 +28,5 @@ public class TC001_LogIn extends ProjectMethods{
 		.clickLogin();
 		//.clickLogOut();
 	}
-   
-	
-	
 
 }
