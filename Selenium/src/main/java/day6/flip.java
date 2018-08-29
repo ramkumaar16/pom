@@ -6,13 +6,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 public class  flip {
+	@Test
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-				// TODO Auto-generated method stub
-
 				System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 				ChromeDriver driver = new ChromeDriver();
 				//load U
@@ -32,8 +31,6 @@ public class  flip {
 				Thread.sleep(3000);
 				driver.findElementByXPath("//span[text()='Flats']").click();
 				Thread.sleep(2000);
-                
-			
 
 		}
 

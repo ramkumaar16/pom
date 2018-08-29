@@ -1,5 +1,6 @@
 package day5;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -12,12 +13,12 @@ public class iframe {
 		//load U
 		driver.get("http://layout.jquery-dev.com/demos/iframe_local.html");
 		driver.manage().window().maximize();
-		WebElement ele = driver.findElementByXPath("//iframe");
-		driver.switchTo().frame(ele);
-		driver.switchTo().parentFrame();
-		
-		
-        driver.findElementByXPath("//button[text()[contains(.,'Close Me')]]").click();
+		//WebElement ele =  driver.findElementByXPath("//iframe");
+		driver.switchTo().frame("childIframe");
+		driver.findElementByLinkText("Close Me").click();
+		//driver.switchTo().frame(ele);
+		//driver.switchTo().parentFrame();
+        //driver.findElementByXPath("//button[text()[contains(.,'Close Me')]]").click();
         
 
 	}

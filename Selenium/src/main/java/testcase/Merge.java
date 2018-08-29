@@ -8,7 +8,7 @@ import wdMethods1.ProjectMethods;
 
 
 public class Merge extends ProjectMethods{
-	@Test
+	@Test(invocationCount=2)
 	public void merge() throws InterruptedException {
     //login();
 	WebElement openLeads = LocateElement("linkText","Leads");

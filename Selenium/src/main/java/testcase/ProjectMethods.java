@@ -1,12 +1,14 @@
-package wdMethods;
+package testcase;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import wdMethods1.SeMethods;
+
 public class ProjectMethods extends SeMethods {
-//@Test(invocationCount=5,successPercentage=80)
+     @Test(invocationCount=5,successPercentage=80)
 	@BeforeMethod
 	public void login() {
 		StartApp("firefox","http://www.leaftaps.com/opentaps");
