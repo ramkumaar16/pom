@@ -25,7 +25,7 @@ public class myFileRead {
 		buff.write(output.charAt(i));
 	}
 	   System.out.println("my name is "+output);
-	   
+	   buf.close();
 	   
 	}
 
